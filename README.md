@@ -1,25 +1,20 @@
 # Delphi import unit for OpenSSL DLL
-(this is the verbatim from the old site https://www.disi.unige.it/person/FerranteM/delphiopenssl/)
+
+This is the a fork ofd https://github.com/UniGe/delphiopenssl by [Marco Ferrante](https://github.com/mfprimo), a try to keep alive and up-to-date his well known OpenSSL Delphi import unit. Original files can still be found at https://www.disi.unige.it/person/FerranteM/delphiopenssl/.
 
 [Versione italiana](LEGGIMI.md)
 
-[OpenSSL](http://www.openssl.org/) is a collaborative project
-to develop an Open Source toolkit implementing the Secure Sockets Layer
-(SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well
-as a full-strength general purpose cryptography library.<br>
-To use OpenSSL software on Microsoft Windows 32 bit systems,
-you can get DDLs from the [GNU Win32 project](http://gnuwin32.sourceforge.net/)
+[OpenSSL](http://www.openssl.org/) is a collaborative project to develop an Open Source toolkit implementing the Secure Sockets Layer (SSL v2/v3) and Transport Layer Security (TLS v1) protocols as well as a full-strength general purpose cryptography library.<br>
+To use OpenSSL software on Microsoft Windows 32 bit systems, you can get DDLs from the [GNU Win32 project](http://gnuwin32.sourceforge.net/)
 site.
 
 ## Borland Delphi and OpenSSL
+
 Delphi can use OpenSSL library invoking DLL.
 
-OpenSSL toolkit is divided in two modules: `libssl`, implementing SSLv2/v3
-and TLS for network communications and `libcrypto`, that
-implements cryptography functions.
+OpenSSL toolkit is divided in two modules: `libssl`, implementing SSLv2/v3 and TLS for network communications and `libcrypto`, that implements cryptography functions.
 
-To use SLv2/v3 and TLS network function with Delphi, you can use components from
-[Indy](http://www.nevrona.com/Indy/) project.
+To use SLv2/v3 and TLS network function with Delphi, you can use components from [Indy](http://www.nevrona.com/Indy/) project.
 
 [CSITA](http://www.cedia.unige.it/) has developed a unit to import some function about X.509 certificate.
 
@@ -56,10 +51,24 @@ To use SLv2/v3 and TLS network function with Delphi, you can use components from
     - new TPKCS7 class for PCKS#7 envelope reading
     - new TX509Certificate class for X.509 certificate verifing
     - some new function
+- [CryptoUtils.pas v. 0.3](CryptoUtils.pas)
+  - Utility functions for cryptografic purposes.
 
 Functions documentation are included with OpenSSL distribution.
 
+## Goals and to-do
+
+- To keep this project alive is the main goal of this fork.
+- Bring OpenSSL header up-to-date with the lastest OpenSSL version.
+- Full UNICODE support.
+- Win64 compilable.
+- Use dynamic loading, hence applications using this will still be able to run if libraries are not present.
+- Compatibility with Delphi 7 up to the lastest version.
+- Maintain retro compatibility as long as possible.
+- Keep this as clean and as simple as possible.
+
 ## Examples
+
 - [How to get OpenSSL DDL version DLL](example1.md)
 - [How to compute SHA1 digest](example2.md)
 - [Generate a RSA keypair (coded in OpenSSLUtils)](example3.md)
@@ -71,4 +80,5 @@ Functions documentation are included with OpenSSL distribution.
 - [RSA+MD5 signature](RSAMD5sig.md)
 
 ## Comments
+
 Any suggestion, contribution and comment are appreciated.
