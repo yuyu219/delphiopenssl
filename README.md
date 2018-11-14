@@ -1,6 +1,6 @@
 # Delphi import unit for OpenSSL DLL
 
-This is the a fork ofd https://github.com/UniGe/delphiopenssl by [Marco Ferrante](https://github.com/mfprimo), a try to keep alive and up-to-date his well known OpenSSL Delphi import unit. Original files can still be found at https://www.disi.unige.it/person/FerranteM/delphiopenssl/.
+This is the a fork of the [GitHub Delphi OpenSSL repo](https://github.com/UniGe/delphiopenssl) by [Marco Ferrante](https://github.com/mfprimo), a try to keep alive and up-to-date his well known OpenSSL Delphi import unit. Original files can still be found at [UniGe website](https://www.disi.unige.it/person/FerranteM/delphiopenssl/).
 
 [Versione italiana](LEGGIMI.md)
 
