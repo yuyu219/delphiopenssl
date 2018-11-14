@@ -4,14 +4,14 @@
 ## _Leggere la versione della DLL di OpenSSL_
 
 ```
-function GetVersion: string;
+function GetVersion: String;
 var
-  v: cardinal;
+  v: Cardinal;
   s: PChar;
 begin
-v := SSLeay;
-s := SSLeay_version(_SSLEAY_CFLAGS);
-result := s + ' (' + IntToHex(v, 9) + ')';
+  v := SSLeay();
+  s := SSLeay_version(_SSLEAY_CFLAGS);
+  Result := s + ' (' + IntToHex(v, 9) + ')';
 end;
 ```
 
